@@ -2,8 +2,9 @@
 <html>
 <head>
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
+<title>Pilot BSCAV</title>  
 </head>
+
 <body>
 
  <iframe src="https://www.vmixcall.com/" allow="camera *;microphone *" style="position:absolute;top:0;left:0;width:90%;height:95%;"></iframe> 
@@ -19,10 +20,71 @@
 <br>
 
 	<img id="back" src="https://raw.githubusercontent.com/bscav/Remote1/master/images/back.png" width="125" height="125" align="right">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	<img id="logo" src="https://raw.githubusercontent.com/bscav/Remote1/master/images/logo%20rozl%201%20alpha.png" width="175" height="124" align="right">
+	
 	
     
 
 <script>
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+//-- usage --//
+preload(
+    "https://raw.githubusercontent.com/bscav/Remote1/master/images/next.png",
+    "https://raw.githubusercontent.com/bscav/Remote1/master/images/nextclick.png",
+    "https://raw.githubusercontent.com/bscav/Remote1/master/images/back.png",
+    "https://raw.githubusercontent.com/bscav/Remote1/master/images/backclick.png",
+    "https://raw.githubusercontent.com/bscav/Remote1/master/images/logo%20rozl%201%20alpha.png"
+)
+
+
 	$("#next").mousedown(function(){
 	$.get('http://94.75.123.182:8875/press/bank/1/3');});
 	
