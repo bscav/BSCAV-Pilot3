@@ -44,23 +44,8 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-	<img id="logo" src="https://raw.githubusercontent.com/bscav/Remote1/master/images/logo%20rozl%201%20alpha.png" width="175" height="124" align="right">
+	<img id="logo" src="https://raw.githubusercontent.com/bscav/Remote1/master/images/logo%20rozl%201%20alpha.png" width="125" height="89" align="right">
 	
 	
     
@@ -84,9 +69,9 @@ preload(
     "https://raw.githubusercontent.com/bscav/Remote1/master/images/logo%20rozl%201%20alpha.png"
 )
 
-
+//-- tu trzeba zmienic przycisk next--//
 	$("#next").mousedown(function(){
-	$.get('http://94.75.123.182:8875/press/bank/1/3');});
+	$.get('https://bscav3.ngrok.io/press/bank/1/2');});
 	
 
 
@@ -102,9 +87,10 @@ $(document).ready(function()
         $(this).attr("src", "https://raw.githubusercontent.com/bscav/Remote1/master/images/nextclick.png");
     });
 });
-
+	
+//-- tu trzeba zmienic przycisk back--//
 $("#back").mousedown(function(){
-$.get('http://94.75.123.182:8875/press/bank/1/1');});
+$.get('https://bscav3.ngrok.io/press/bank/1/3');});
 
 $(document).ready(function()
 {
